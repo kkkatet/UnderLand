@@ -197,3 +197,29 @@ case 2: {
 case 3: {
     std::cout << std::endl << "- Извини, ты это мне?" << std::endl;
     system("pause");
+
+        std::cout << std::endl << "- Ну а кому еще? Много денег из городской казны воруешь?" << std::endl;
+        system("pause");
+
+        std::cout << std::endl << "- Если ты сейчас же не уйдешь, мне придется применить силу..." << std::endl;
+        system("pause");
+
+        std::cout << std::endl << "- Все, что ты можешь, это сидеть своей жопой здесь и пить дешевое пиво." << std::endl;
+        system("pause");
+
+        enemy("Координатор армии Нотльхейма", 20, 8, 2, heroHealth, heroMana, heroAttack, heroArmor, heroSpeed);
+        break;
+    }
+    case 4: {
+        officerBool = false;
+
+        break;
+    }
+    default: {
+        std::cout << "ОШИБКА!!! Вы ввели неверное значение." << std::endl;
+        break;
+    }
+           break;
+    }
+}
+break;
