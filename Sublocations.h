@@ -23,3 +23,28 @@ void notlheimTavern() {
     bool tavernBool = true;
     while (tavernBool) {
         int tavern;
+ cout << "###  Выберите действия:  ###" << endl;
+ cout << "1. Подойти к барной стойке." << endl;
+ cout << "2. Подойти к офицерам." << endl;
+ cout << "3. Подойти к рабочим." << endl;
+ cout << "4. Уйти." << std::endl;
+ cin >> tavern;
+
+ switch (tavern) {
+ case 1: {
+     cout << "Подойдя к барной стойке, я осмотрелся." << endl;
+     system("pause");
+
+     bool innkeeperBool = true;
+     while (innkeeperBool) {
+         int tavernSwitch;
+         cout << "###  Выберите действия:  ###" << endl;
+         cout << "1. Украсть бутылку спиртного." << endl;
+         cout << "2. Затеять драку с рядом стоящим гражданином." << endl;
+         cout << "3. Дождаться трактирщика." << endl;
+         cout << "4. Уйти." << endl;
+         cin >> tavernSwitch;
+
+         switch (tavernSwitch) {   // Innkeeper
+         case 1: {
+             std::cout << "Облокотившись на стойку, я начал рассматривать." << std::endl;
