@@ -73,3 +73,28 @@ void notlheimTavern() {
      break;
  case 2:
      cout << "Ловким движением рук я выхватил бутылку водки и спрятал за пазухой." << endl;
+
+                        AddItem("Бутылка водки", 1, bottleOfVodka);
+                        cout << "В иневентарь добавлен новый предмет!" << endl;
+                        cout << "Нажмите 1 для просмотра." << endl;
+                        cin >> tavernSwitch;
+                        if (tavernSwitch == 1) {
+                            OutputInventory();
+                            system("pause");
+                        }
+
+                        break;
+                    case 3:
+                        cout << "Ловким движением рук я выхватил бутылку бренди и спрятал за пазухой." << endl;
+
+                        AddItem("Бутылка бренди", 1, bottleOfBrendy);
+                        cout << "В иневентарь добавлен новый предмет!" << endl;
+                        cout << "Нажмите 1 для просмотра." << endl;
+                        cin >> tavernSwitch;
+                        if (tavernSwitch == 1) {
+                            OutputInventory();
+                            system("pause");
+                        }
+
+                        break;
+                    default:
