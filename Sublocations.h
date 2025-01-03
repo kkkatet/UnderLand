@@ -98,3 +98,28 @@ void notlheimTavern() {
 
                         break;
                     default:
+        cout << "ОШИБКА!!! Вы ввели неверное значение." << endl;
+        continue;
+    }
+    break;
+}
+case 2: {
+    cout << "Подойдя поближе к стоящему у стойки молодому человеку, я сказал:" << endl << endl;;
+    cout << "- Парень, мне кажется, ты на меня косо смотришь, у тебя есть ко мне претензии?" << endl;
+    system("pause");
+
+    cout << "- Чего?" << endl;
+    system("pause");
+
+    cout << "- Того, давай разберемся один на один. Или ты боишься?" << endl;
+    system("pause");
+
+    cout << "- Да ты, наверное, охренел. Ты за свои слова сейчас получишь!" << endl;
+    system("pause");
+
+    enemy("Рабочий", 15, 3, 0, heroHealth, heroMana, heroAttack, heroArmor, heroSpeed);
+    break;
+}
+case 3: {
+    notlheimInnkeeper();
+    break;
