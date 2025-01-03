@@ -398,3 +398,28 @@ void notlheimBarracks() {
 
             cout << "###  Выберите действия:  ###" << endl;
             cout << "1. Я бы хотел пройти." << endl;
+ cout << "2. Уйти." << endl;
+ if (questList[0] == 1) {
+     cout << "3. Я пришел сдать задание вашему офицеру." << endl;
+ }
+ cin >> barracks;
+ switch (barracks) {
+ case 1: {
+     cout << "Назови звание." << endl;
+
+     system("pause");
+
+     cout << endl << "###  Выберите действия:  ###" << endl;
+     cout << endl << "1. У меня нет звания." << endl;
+     cout << endl << "2. Старший дивизионщик." << endl;
+     cout << endl << "3. Ударить стражника" << endl;
+
+     switch (barracks) {
+     case 1: {
+         cout << endl << "В таком случае пошел вон отсюда." << endl;
+
+         system("pause");
+
+         break;
+     }
+     case 2: {
