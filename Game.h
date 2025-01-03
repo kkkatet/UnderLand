@@ -76,3 +76,58 @@ void enemy(std::string name, int health, int damage, int speed, int& heroHealth,
                 }
                 break;
             }
+            default: {
+                std::cout << "ОШИБКА!!! Вы ввели неверное значение." << std::endl;
+            }
+            }
+            system("pause");
+            break;
+        }
+
+        case 2: {
+            if (enemySpeed >= heroSpeed) {
+                std::cout << "Вам не удалось убежать!" << std::endl;
+                int damageTaken = rand() % (enemyDamage + 1);
+                heroHealth -= damageTaken;
+                std::cout << "Нанесен урон: " << damageTaken << std::endl;
+            }
+            else {
+                std::cout << std::endl << "Вам удалось убежать!" << std::endl << std::endl;
+                fightBool = false;
+            }
+            break;
+        }
+
+        default: {
+            std::cout << "ОШИБКА!!! Вы ввели неверное значение." << std::endl;
+            break;
+        }
+        }
+
+        if (enemyHealth <= 0) {
+            std::cout << enemyName << " повержен!" << std::endl;
+            fightBool = false;
+        }
+    }
+}
+
+// Statistics
+void stats(int& heroHealth, int& heroMana, int& heroAttack, int& heroArmor, int& heroSpeed) {
+	std::cout << "## Здоровье: " << heroHealth << " ##" << std::endl;
+	std::cout << "## Мана: " << heroMana << " ##" << std::endl;
+	std::cout << "## Броня: " << heroArmor << " ##" << std::endl;
+	std::cout << "## Скорость: " << heroSpeed << " ##" << std::endl;
+	std::cout << "## Урон: " << heroAttack << " ##" << std::endl;
+
+    return;
+}
+
+// Quests
+void quests() {
+	int questSwitch;
+	if (getQuest == 0) {
+		std::cout << "У вас нету квестов." << std::endl;
+
+		system("pause");
+		return;
+	}
