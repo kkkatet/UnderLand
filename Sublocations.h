@@ -473,3 +473,28 @@ case 2: {
 
         switch (barracks) {
         case 1: {
+    cout << "Подойдя в здание управления, передо мной стали пять человек охранников." << endl << endl;
+
+    system("pause");
+
+    cout << "Дальше идти нельзя. Назови причину визита." << endl << endl;
+
+    system("pause");
+
+    cout << endl << "###  Выберите действия:  ###" << endl;
+    cout << "1. Мне надо сдать задание вашим офицерам." << endl;
+    cout << "2. Разаернуться." << endl;
+    cin >> barracks;
+
+    if (barracks == 1) {
+        cout << "Нас никто не предупреждал, о задании. Вход все еще запрещен." << endl << endl;
+
+        system("pause");
+
+        cout << "" << endl;
+    }
+    break;
+}
+}
+
+break;
