@@ -448,3 +448,28 @@ void notlheimBarracks() {
 
 case 2: {
     return;
+
+            break;
+        }
+
+        case 3: {
+
+
+            break;
+        }
+        }
+        break;
+    }
+
+    cout << endl << "Пройдя свозь тяжелые ворота, моему взору открылись кузня, офицерское управление и само здание казарм." << endl;
+
+    system("pause");
+
+    bool barracksChoice = true;
+    while (barracksChoice == true) {
+        cout << endl << "###  Выберите действия:  ###" << endl;
+        cout << "1. Пойти в главное здание." << endl;
+        cin >> barracks;
+
+        switch (barracks) {
+        case 1: {
