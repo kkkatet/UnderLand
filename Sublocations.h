@@ -48,3 +48,28 @@ void notlheimTavern() {
          switch (tavernSwitch) {   // Innkeeper
          case 1: {
              std::cout << "Облокотившись на стойку, я начал рассматривать." << std::endl;
+ system("pause");
+
+ int drinkChoice;
+ std::cout << "###  Выберите действие:  ###" << std::endl;
+ std::cout << "1. Украсть пинту эля." << std::endl;
+ std::cout << "2. Украсть бутылку водки." << std::endl;
+ std::cout << "3. Украсть бутылку бренди." << std::endl;
+ std::cin >> drinkChoice;
+
+ switch (drinkChoice) {
+ case 1:
+     cout << "Ловким движением рук я выхватил пинту эля и спрятал за пазухой." << endl;
+
+     AddItem("Пинта эля", 1, pintOfEl);
+     cout << "В иневентарь добавлен новый предмет!" << endl;
+     cout << "Нажмите 1 для просмотра." << endl;
+     cin >> tavernSwitch;
+     if (tavernSwitch == 1) {
+         OutputInventory();
+         system("pause");
+     }
+
+     break;
+ case 2:
+     cout << "Ловким движением рук я выхватил бутылку водки и спрятал за пазухой." << endl;
