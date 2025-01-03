@@ -223,3 +223,28 @@ case 3: {
     }
 }
 break;
+  }
+  case 3: {    // Workers
+      std::cout << "Подойдя к рабочим поближе, в нос сразу ударило запахом пота и дешевого эля." << std::endl << endl;
+
+      system("pause");
+
+      bool tavernWorkers = true;
+
+      while (tavernWorkers == true) {
+          cout << "###  Выберите действия:  ###" << endl;
+          cout << "1. Присесть рядом." << endl;
+          cout << "2. Уйти." << endl;
+          cin >> tavern;
+
+          bool dialogueWithWorkers = true;
+          while (dialogueWithWorkers == true) {
+              switch (tavern) {
+              case 1: {
+                  cout << "1. Спросить про условия здешние труда." << endl;
+                  cout << "2. Узнать про нынешнее положение города." << endl;
+                  cout << "3. Выпить эля." << endl;
+                  cout << "4. Уйти." << endl;
+                  cin >> tavern;
+                  switch (tavern) {
+                  case 1: {
