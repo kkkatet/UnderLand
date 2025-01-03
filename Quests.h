@@ -71,34 +71,6 @@ void tunnelQuest() {
 							spichki = true;
 						}
 					}
-							if (lamp == false) {
-		cout << "Впереди слишком темно, я не могу идти дальше..." << endl;
-
-		system("pause");
-
-		cout << "### Выберите действия:  ###" << endl;
-		cout << "1. Вернуться." << endl;
-		cin >> tunnelQuest;
-		
-		system("pause");
-	}
-
-
-	else if (spichki == false) {
-		if (lamp == true) {
-			cout << "Мне не чем зажечь лампу..." << endl;
-
-			system("pause");
-
-			cout << "###  Выберите действия:  ###" << endl;
-			cout << "1. Вернуться." << endl;
-			cin >> tunnelQuest;
-
-			system("pause");
-		}
-	}
-}
-
 					else if (tunnelQuest == 2) {
 						lootBool1 = false;
 
@@ -108,3 +80,67 @@ void tunnelQuest() {
 			}
 		}
 		}
+
+		if (lamp == false) {
+			cout << "Впереди слишком темно, я не могу идти дальше..." << endl;
+
+			system("pause");
+
+			cout << "### Выберите действия:  ###" << endl;
+			cout << "1. Вернуться." << endl;
+			cin >> tunnelQuest;
+			
+			system("pause");
+		}
+
+
+		else if (spichki == false) {
+			if (lamp == true) {
+				cout << "Мне не чем зажечь лампу..." << endl;
+
+				system("pause");
+
+				cout << "###  Выберите действия:  ###" << endl;
+				cout << "1. Вернуться." << endl;
+				cin >> tunnelQuest;
+
+				system("pause");
+			}
+		}
+	}
+
+	cout << "Когда я зажег лампу, первое, что я уивдел - это заплесневелые стены, покрытые некой вязкой субстанцией. Сделав несколько шагов, оказалось, что тем же покрыта вся поверхность." << endl;
+	cout << "Так же спокоя не давал и острый запах фекалий и мочи." << endl;
+
+	system("pause");
+
+	cout << "Пройдя метров двести, я привык к сдешнему запаху и продолжал идти дальше. Как вдруг..." << endl;
+	enemy("Крыса", 8, 2, 4, heroHealth, heroMana, heroAttack, heroArmor, heroSpeed);
+	
+	cout << "Одолев крысу я двинулся дальше." << endl;
+
+	system("pause");
+
+	cout << "Спустя столько же, я наткнулся на развилку." << endl;
+	cout << "###  Выберите действия:  ###" << endl;
+	cout << "1. Пойти налево." << endl;
+	cout << "2. Пойти направо" << endl;
+	cin >> tunnelQuest;
+
+	if (tunnelQuest == 1) {
+		cout << "Свернув в левую сторону я пошел дальше. Вокруг было все такой же 'пейзаж' из плесени и черной слизи, который еще добавлялся редкими люминесцентными сорняками, неизвестной мне природы" << endl;
+		cout << "Пройдя еще чуть дальше" << endl;
+	}
+
+	else if (tunnelQuest == 2) {
+		cout << "" << endl;
+	}
+}
+
+void questFromGateKeeper() {
+
+}
+
+void questFromMayor() {
+
+}
