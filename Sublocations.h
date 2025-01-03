@@ -423,3 +423,28 @@ void notlheimBarracks() {
          break;
      }
      case 2: {
+            cout << endl << "Ничего ты загнул! Пошел вон отсюда, обманщик гнилой, иначе сейчас позову людей постарше и загребут тебя на трое суток, понял меня?!" << endl;
+
+            system("pause");
+
+            break;
+        }
+        }
+        break;
+    }
+
+    case 2: {
+        cout << "Проходи." << endl;
+
+        system("pause");
+
+        barracksBool = false;
+        break;
+    }
+    }
+ 
+    break;
+}
+
+case 2: {
+    return;
