@@ -347,3 +347,29 @@ case 2: {
             cout << "2. Статистика персонажа." << endl;
             cout << "3. Квесты." << endl;
             cin >> tavern;
+
+            switch (tavern) {
+            case 1: {
+                OutputInventory();
+
+                break;
+            }
+            case 2: {
+                stats(heroHealth, heroMana, heroAttack, heroArmor, heroSpeed);
+
+                break;
+            }
+            case 3: {
+                quests();
+
+                break;
+            }
+            }
+
+            break;
+        }
+
+        }
+    }
+}
+ 
