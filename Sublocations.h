@@ -123,3 +123,28 @@ case 2: {
 case 3: {
     notlheimInnkeeper();
     break;
+        }
+        case 4: {
+            innkeeperBool = false;
+            break;
+        }
+        default: {
+            cout << "ОШИБКА!!! Вы ввели неверное значение." << endl;
+            break;
+        }
+        }
+    }
+    break;
+}
+case 2: {   // Officers
+    cout << "Подойдя к офицерам местной армии, они сразу обратили на меня внимание." << endl;
+    system("pause");
+
+    bool officerBool = true;
+
+    while (officerBool == true) {
+        cout << "Чего тебе, парень?" << endl << endl;
+        cout << "###  Выберите варианты ответа: ###" << endl;
+        cout << "1. Хочу сделать что-то полезное для этого городишки." << endl;
+        cout << "2. Что вы можете сказать про местную армию?" << endl;
+        cout << "3. Мне кажется, вы сильно много о себе возомнили..." << endl;
