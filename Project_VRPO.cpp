@@ -155,3 +155,79 @@ int main() {
             break;
     }
     }
+    // City of Notlheim
+    string cityOfNotlheim = "Город Нотльхейм";
+    string outskirtsOfTheCityOfNotlheim = "Окрестности Нотльхейма";
+    cout << endl << "ВЫ ПРИБЫВАЕТЕ В НОТЛЬХЕЙМ!" << endl;
+    cout << endl;
+
+    cout << "Кроме запах мочи и крови, спящих наркоманов и попрошаек, которые давно потеряли веру в светлое будущее здесь ничего не было. " << endl;
+    cout << "Максимум тела повешенных бедняг, которых осудили, вероятно, за мелкое воровство или измену, укарашали главный вход в этот захолустный городок." << endl;
+
+    system("pause");
+
+    bool notlheimBool = true;
+    while (notlheimBool == true) {
+    cout << "###  Выберите действия:  ###" << endl;
+    cout << "1. Пойти в трактир." << endl;
+    cout << "2. Пойти в казармы." << endl;
+    if (questList[0] == true) {
+        cout << "3. Пойти к канализации." << endl;
+    }
+    cout << "9. Другое." << endl;
+    int notlheim;
+    cin >> notlheim;
+
+        switch (notlheim) {
+        case 1: {
+            notlheimTavern();
+            break;
+        }
+
+        case 2: {
+            notlheimBarracks();
+            break;
+        }
+
+        case 3: {
+            notlheimTunnels();
+            break;
+        }
+
+        case 9: {
+            cout << endl << "###  Выберите действия:  ###" << endl;
+            cout << "1. Инвентарь." << endl;
+            cout << "2. Статистика персонажа." << endl;
+            cout << "3. Квесты." << endl;
+            cout << "4. Главное меню." << endl;
+            cin >> notlheim;
+
+            switch (notlheim) {
+            case 1: {
+                OutputInventory();
+
+                break;
+            }
+            case 2: {
+                stats(heroHealth, heroMana, heroAttack, heroArmor, heroSpeed);
+
+                break;
+            }
+            case 3: {
+                quests();
+
+                break;
+            }
+            case 4: {
+                main();
+
+                break;
+            }
+            }
+
+            break;
+        }
+        break;
+        }
+    }
+}
