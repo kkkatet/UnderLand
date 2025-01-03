@@ -71,6 +71,34 @@ void tunnelQuest() {
 							spichki = true;
 						}
 					}
+							if (lamp == false) {
+		cout << "Впереди слишком темно, я не могу идти дальше..." << endl;
+
+		system("pause");
+
+		cout << "### Выберите действия:  ###" << endl;
+		cout << "1. Вернуться." << endl;
+		cin >> tunnelQuest;
+		
+		system("pause");
+	}
+
+
+	else if (spichki == false) {
+		if (lamp == true) {
+			cout << "Мне не чем зажечь лампу..." << endl;
+
+			system("pause");
+
+			cout << "###  Выберите действия:  ###" << endl;
+			cout << "1. Вернуться." << endl;
+			cin >> tunnelQuest;
+
+			system("pause");
+		}
+	}
+}
+
 					else if (tunnelQuest == 2) {
 						lootBool1 = false;
 
