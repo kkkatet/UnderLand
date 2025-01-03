@@ -298,3 +298,28 @@ case 2: {
 
     break;
 }
+
+                        case 3: {
+                            cout << "Сделав пару глотков слегка сладкого и в большей степени кисло-горького алкогольного папитка, я почувствовал прилив сил." << endl;
+
+                            cout << "Вы выпили эль!" << endl;
+                            cout << "Здоровье: + 2" << endl;
+
+                            heroHealth += 2;
+
+                            if (heroHealth > 20) {
+                                heroHealth = 20;
+                            }
+                         
+                            system("pause");
+
+                            break;
+                        }
+                        case 4: {
+                            dialogueWithWorkers = false;
+
+                            break;
+                        }
+                        }
+                        break;
+                    }
