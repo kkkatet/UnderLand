@@ -131,3 +131,44 @@ void quests() {
 		system("pause");
 		return;
 	}
+	else {
+		std::cout << "Количество квестов: " << getQuest << std::endl;
+		std::cout << "1. Посмотреть квесты" << std::endl;
+		std::cout << "2. Выйти." << std::endl;
+		std::cin >> questSwitch;
+		switch (questSwitch) {
+		case 1: {
+			std::cout << std::endl << "Ваши квесты: " << std::endl;
+			
+			int questNumber = 1;
+			for (int i = 0; i < 3; ++i) {
+				if (questList[i] == true) {
+					std::cout << questNumber << ". ";
+					switch (i) {
+					case 0: {
+						std::cout << "Тварь в тоннеле." << std::endl;
+
+						break;
+					}
+					case 1: {
+						std::cout << "" << std::endl;
+
+						break;
+					}
+					case 2: {
+						std::cout << "" << std::endl;
+						break;
+					}
+					}
+					questNumber++;
+				}
+			}
+
+			break;
+		}
+		case 2: {
+			return;
+		}
+		}
+	}
+}
