@@ -323,3 +323,27 @@ case 2: {
                         }
                         break;
                     }
+
+                    case 2: {
+                        tavernWorkers = false;
+                    }
+                    }
+                break;
+                }
+            }
+        }
+        case 4: {
+            tavernBool = false;
+            break;
+        }
+        default: {
+            cout << "ОШИБКА!!! Вы ввели неверное значение." << endl;
+            break;
+        }
+
+        case 9: {
+            cout << endl << "###  Выберите действия:  ###" << endl;
+            cout << "1. Инвентарь." << endl;
+            cout << "2. Статистика персонажа." << endl;
+            cout << "3. Квесты." << endl;
+            cin >> tavern;
